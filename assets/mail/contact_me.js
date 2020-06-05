@@ -69,7 +69,7 @@ $(function () {
                 complete: function () {
                     setTimeout(function () {
                         $this.prop("disabled", false); // Re-enable submit button when AJAX call is complete
-                    }, 3000);
+                    }, 10000);
                 },
             });
         },
