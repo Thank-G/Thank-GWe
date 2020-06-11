@@ -22,5 +22,5 @@ $email_body = "You have received a new message from your website contact form.\n
 $headers = "From: noreply@treasurehall.net\n"; // This is the email address the generated message will be from.
 $headers .= "Reply-To: $email_address";   
 mail($to,$email_subject,$email_body,$headers);
-return false;         
+return true;         
 ?>
