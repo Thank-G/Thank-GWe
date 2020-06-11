@@ -529,6 +529,21 @@ pre code {
   overflow-y: scroll;
 }
 
+
+.scroll-to-top {
+  z-index: 1042;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+}
+
+.scroll-to-top a {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: rgba(33, 37, 41, 0.5);
+  line-height: 3.1rem;
+}
+
 .container {
   width: 100%;
   padding-right: 0.75rem;
