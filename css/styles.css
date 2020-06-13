@@ -132,6 +132,13 @@ small {
   font-size: 80%;
 }
 
+.list-inline-item {
+  display: inline-block;
+}
+.list-inline-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
 sub,
 sup {
   position: relative;
