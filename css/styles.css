@@ -545,10 +545,10 @@ pre code {
 }
 
 .scroll-to-top a {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background-color: rgba(33, 37, 41, 0.5);
-  line-height: 3.1rem;
+  line-height: 2.1rem;
 }
 
 .container {
