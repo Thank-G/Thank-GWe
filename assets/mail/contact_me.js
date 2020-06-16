@@ -2,7 +2,7 @@ $(function () {
     $(
         "#contactForm input,#contactForm textarea,#contactForm button"
     ).jqBootstrapValidation({
-        preventSubmit: false,
+        preventSubmit: true,
         submitError: function ($form, event, errors) {
             // additional error messages or events
         },
@@ -19,7 +19,7 @@ $(function () {
                 firstName = name.split(" ").slice(0, -1).join(" ");
             }
             $this = $("#sendMessageButton");
-            $this.prop("disabled", false); // Disable submit button until AJAX call is complete to prevent duplicate messages
+            $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
             $.ajax({
                 url: "/assets/mail/contact_me.php",
                 type: "POST",
@@ -78,10 +78,10 @@ $(function () {
         },
     });
 
-    $('a[data-toggle="tab"]').click(function (e) {
-        e.preventDefault();
-        $(this).tab("show");
-    });
+    // $('a[data-toggle="tab"]').click(function (e) {
+    //     e.preventDefault();
+    //     $(this).tab("show");
+    // });
 });
 
 /*When clicking on Full hide fail/success boxes */

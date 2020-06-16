@@ -718,8 +718,8 @@
           };
         },
         validate: function($this, value, validator) {
-          return (parseFloat(value, 5) > parseFloat(validator.max, 5) && !validator.negative) ||
-            (parseFloat(value, 5) <= parseFloat(validator.max, 5) && validator.negative);
+          return (parseFloat(value, 10) > parseFloat(validator.max, 10) && !validator.negative) ||
+            (parseFloat(value, 10) <= parseFloat(validator.max, 10) && validator.negative);
         }
       },
       min: {
